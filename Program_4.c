@@ -7,11 +7,6 @@
 #include <stdio.h>
 int main()
 {
-  //Declare all the variables[N, array a(1D array), i, sum=0] used in the code
-  //Read the Value of array size N using scanf statement
-  //Read the array elements using for loop and scanf statment
-  // DO the addition of array elements and store the final result in variable sum
-  //Print the sum of array elements which is stored in variable sum using printf statement
   int a[10],i,n,sum=0;
   printf("Enter the number of inputs\n");
   scanf("%d",&n);
