@@ -5,7 +5,7 @@
 
 int main()
 {
-    int arr[5], n, i,max,min;
+    int arr[50], n, i,max,min;
     scanf("%d", &n);
 
     for(i = 0; i < n; i++)
@@ -14,16 +14,25 @@ int main()
 
     //Write your code here
     max=arr[0];
-    min=arr[0];
-
+   
+   for(i=1;i<n;i++)
+    {
+      if(max<arr[i])
+     { 
+       max=arr[i];
+     }
+    }
+    printf("Max=%d\n",max);
+    
+     min=arr[0];
     for(i=1;i<n;i++)
     {
-      if(arr[i]>max)
-      max=arr[i];
-
-      if(arr[i]<min)
-      min=arr[i];
+    
+      if(min>arr[i])
+      {
+        min=arr[i];}
     }
-    printf("Max=%d\nMin=%d",max,min);
+    
+    printf("Min=%d\n",min);
     return 0;
 }
